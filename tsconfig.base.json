@@ -18,7 +18,22 @@
       "@golden-state-management/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
       ],
-      "@golden-state-management/layout": ["libs/layout/src/index.ts"]
+      "@golden-state-management/feature/home": [
+        "libs/feature/home/src/index.ts"
+      ],
+      "@golden-state-management/feature/player": [
+        "libs/feature/player/src/index.ts"
+      ],
+      "@golden-state-management/feature/team": [
+        "libs/feature/team/src/index.ts"
+      ],
+      "@golden-state-management/layout": ["libs/layout/src/index.ts"],
+      "@golden-state-management/shared/ui-layout": [
+        "libs/shared/ui-layout/src/index.ts"
+      ],
+      "@golden-state-management/util/style-color": [
+        "libs/util/style-color/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

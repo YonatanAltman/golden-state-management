@@ -4,8 +4,12 @@
   "projects": {
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
+    "feature-home": "libs/feature/home",
+    "feature-player": "libs/feature/player",
+    "feature-team": "libs/feature/team",
     "golden-state-warriors": "apps/golden-state-warriors",
     "golden-state-warriors-e2e": "apps/golden-state-warriors-e2e",
-    "layout": "libs/layout"
+    "shared-ui-layout": "libs/shared/ui-layout",
+    "util-style-color": "libs/util/style-color"
   }
 }

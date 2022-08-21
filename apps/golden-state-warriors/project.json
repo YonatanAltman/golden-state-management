@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/golden-state-warriors",
         "index": "apps/golden-state-warriors/src/index.html",
@@ -17,7 +19,16 @@
           "apps/golden-state-warriors/src/favicon.ico",
           "apps/golden-state-warriors/src/assets"
         ],
-        "styles": ["apps/golden-state-warriors/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "apps/golden-state-warriors/src/assets/styles",
+            "libs/util/style-color/src/lib/styles"
+          ]
+        },
+        "styles": [
+          "libs/util/style-color/src/lib/styles/theme.scss",
+          "apps/golden-state-warriors/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -85,7 +96,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/golden-state-warriors"],
+      "outputs": [
+        "coverage/apps/golden-state-warriors"
+      ],
       "options": {
         "jestConfig": "apps/golden-state-warriors/jest.config.ts",
         "passWithNoTests": true

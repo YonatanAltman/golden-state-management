@@ -1,0 +1,38 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/shared/ui-layout/src",
+  "prefix": "golden-state-management",
+  "targets": {
+    "build": {
+      "options": {
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "libs/util/style-color/src/lib/styles"
+          ]
+        }
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/shared/ui-layout"
+      ],
+      "options": {
+        "jestConfig": "libs/shared/ui-layout/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui-layout/**/*.ts",
+          "libs/shared/ui-layout/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "ui"
+  ]
+}

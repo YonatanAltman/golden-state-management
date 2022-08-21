@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/feature/player/src",
+  "prefix": "golden-state-management",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature/player"],
+      "options": {
+        "jestConfig": "libs/feature/player/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature/player/**/*.ts",
+          "libs/feature/player/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["feature"]
+}

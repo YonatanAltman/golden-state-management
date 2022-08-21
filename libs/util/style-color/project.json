@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/util/style-color/src",
+  "prefix": "golden-state-management",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/util/style-color"],
+      "options": {
+        "jestConfig": "libs/util/style-color/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/util/style-color/**/*.ts",
+          "libs/util/style-color/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["style"]
+}

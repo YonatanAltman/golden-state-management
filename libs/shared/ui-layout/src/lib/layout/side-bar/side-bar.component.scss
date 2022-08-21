@@ -1,0 +1,24 @@
+@import "color.scss";
+:host {
+  width: 200px;
+  background: $yellow;
+  height: 100%;
+  color: #FFC72C;
+
+  .wrapper {
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    cursor: pointer;
+
+    img {
+      height: auto;
+      width: 100px;
+      margin: auto;
+    }
+
+    button {
+      text-transform: capitalize;
+    }
+  }
+}
