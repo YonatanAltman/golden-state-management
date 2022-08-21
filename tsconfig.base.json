@@ -17,7 +17,8 @@
     "paths": {
       "@golden-state-management/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
-      ]
+      ],
+      "@golden-state-management/layout": ["libs/layout/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

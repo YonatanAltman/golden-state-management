@@ -5,6 +5,7 @@
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "golden-state-warriors": "apps/golden-state-warriors",
-    "golden-state-warriors-e2e": "apps/golden-state-warriors-e2e"
+    "golden-state-warriors-e2e": "apps/golden-state-warriors-e2e",
+    "layout": "libs/layout"
   }
 }
