@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "golden-state-warriors": "apps/golden-state-warriors",
+    "golden-state-warriors-e2e": "apps/golden-state-warriors-e2e"
+  }
+}
