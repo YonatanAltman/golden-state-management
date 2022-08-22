@@ -4,6 +4,7 @@
   "projects": {
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
+    "controller-team": "libs/controllers/team",
     "feature-home": "libs/feature/home",
     "feature-player": "libs/feature/player",
     "feature-team": "libs/feature/team",

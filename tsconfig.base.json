@@ -18,6 +18,9 @@
       "@golden-state-management/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
       ],
+      "@golden-state-management/controllers/team": [
+        "libs/controllers/team/src/index.ts"
+      ],
       "@golden-state-management/feature/home": [
         "libs/feature/home/src/index.ts"
       ],
