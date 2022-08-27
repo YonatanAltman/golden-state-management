@@ -12,7 +12,6 @@ export class TeamController {
 
   @Get()
   getData() {
-    console.log('from json');
     try {
       const rawData = fs.readFileSync('libs/controllers/team/src/lib/teams.json');
       const data = JSON.parse(rawData.toString());
@@ -24,7 +23,6 @@ export class TeamController {
 
   @Get('league')
   getLeague(): any {
-    console.log('from json');
     const rawData = fs.readFileSync('libs/controllers/team/src/lib/league.json');
     const data = JSON.parse(rawData.toString());
     return data.response;
@@ -33,7 +31,6 @@ export class TeamController {
 
   @Get('players')
   getTeam(): any {
-    console.log('from json');
     try {
       const rawData = fs.readFileSync('libs/controllers/team/src/lib/players.json');
       const data = JSON.parse(rawData.toString());
