@@ -1,0 +1,12 @@
+<h2 class="title">{{title}}</h2>
+<div class="wrapper">
+  <ng-container *ngIf="isLoader && resource || !isLoader;else loader">
+    <ng-content></ng-content>
+  </ng-container>
+</div>
+<ng-template #loader>
+  <div class="loader">
+
+  Loading
+  </div>
+</ng-template>

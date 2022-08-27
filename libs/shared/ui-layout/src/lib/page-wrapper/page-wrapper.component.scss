@@ -1,0 +1,25 @@
+:host {
+
+  h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+
+    small {
+      font-size: 0.5em;
+    }
+  }
+
+  .wrapper {
+    height: 90vh;
+    width: 80vw;
+    margin: auto;
+    overflow: auto;
+    .loader{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-content: center;
+    }
+  }
+}

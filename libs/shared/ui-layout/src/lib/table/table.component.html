@@ -1,0 +1,14 @@
+<div class="container">
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col" [class]="column.class" *ngFor="let column of config.columns">{{column.label}}</div>
+    </li>
+    <div class="scroller">
+
+      <li class="table-row" *ngFor="let row of data" (click)="onRowClick(row)" (dblclick)="onRowDbClick(row)">
+        <div *ngFor="let column of config.columns" class="col"
+             [class]="column.class">{{row[column.type]}}</div>
+      </li>
+    </div>
+  </ul>
+</div>

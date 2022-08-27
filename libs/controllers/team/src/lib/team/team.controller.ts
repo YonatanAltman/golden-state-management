@@ -12,20 +12,20 @@ export class TeamController {
 
   @Get()
   getData() {
-    const nba = 12;
-    this.service.getTeam(nba).subscribe(result => {
-      const _data = JSON.stringify(result.data);
-      console.log(_data)
-      fs.writeFileSync('teams.json', _data);
-      console.log('success__');
-      return result.data;
-    });
+    console.log('from json');
+    try {
+      const rawData = fs.readFileSync('libs/controllers/team/src/lib/teams.json');
+      const data = JSON.parse(rawData.toString());
+      return data.response;
+    } catch (error) {
+      return {error}
+    }
   }
 
   @Get('league')
   getLeague(): any {
     console.log('from json');
-    const rawData = fs.readFileSync('league.json');
+    const rawData = fs.readFileSync('libs/controllers/team/src/lib/league.json');
     const data = JSON.parse(rawData.toString());
     return data.response;
 
@@ -34,8 +34,15 @@ export class TeamController {
   @Get('players')
   getTeam(): any {
     console.log('from json');
-    const rawData = fs.readFileSync('players.json');
-    const data = JSON.parse(rawData.toString());
-    return data.response;
+    try {
+      const rawData = fs.readFileSync('libs/controllers/team/src/lib/players.json');
+      const data = JSON.parse(rawData.toString());
+      return data.response.map(player =>{
+        player.jersey = player?.leagues?.standard?.jersey || '-';
+        return player
+      });
+    } catch (error) {
+      return {error}
+    }
   }
 }

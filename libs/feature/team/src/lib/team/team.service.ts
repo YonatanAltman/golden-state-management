@@ -1,5 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {delay, Observable} from "rxjs";
+import {Player} from "@golden-state-management/api-interfaces";
 
 @Injectable()
 export class TeamService {
@@ -8,13 +10,15 @@ export class TeamService {
 
   }
 
-  getTeam() {
-    return this.http.get('http://localhost:3333/api/team');
+  getTeam(): Observable<Player[]> {
+    return this.http.get<Player[]>('http://localhost:3333/api/team');
   }
+
   getLeague() {
     return this.http.get('http://localhost:3333/api/team/league');
   }
-  getPlayers() {
-    return this.http.get('http://localhost:3333/api/team/players');
+
+  getPlayers(): Observable<Player[]> {
+    return this.http.get<Player[]>('http://localhost:3333/api/team/players').pipe(delay(2000));
   }
 }

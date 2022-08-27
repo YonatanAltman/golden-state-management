@@ -1,3 +1,7 @@
-<button mat-button (click)="getTeam()">Get Team</button>
-<button mat-button (click)="getLeague()">Get League</button>
-<button mat-button (click)="getPlayers()">Get Players</button>
+<golden-state-management-page-wrapper [title]="title" [isLoader]="true" [resource]="players$ | async">
+<golden-state-management-table
+  [config]="config"
+  [data]="players$ | async"
+  (rowDbClick)="setRow($event)"
+></golden-state-management-table>
+</golden-state-management-page-wrapper>

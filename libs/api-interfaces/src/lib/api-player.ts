@@ -15,6 +15,7 @@ export interface BaseTeamMember {
 
 export interface Player extends BaseTeamMember {
   position: Position;
-  shirtNum:string,
-  collage?: string;
+  shirtNum: string;
+  college?: string;
+  jersey?: number;
 }
