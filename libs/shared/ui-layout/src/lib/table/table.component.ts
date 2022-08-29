@@ -12,6 +12,7 @@ export class TableComponent {
   @Input() data!: any[] | null;
   @Output() rowClick = new EventEmitter<any>();
   @Output() rowDbClick = new EventEmitter<any>();
+  @Output() editRow = new EventEmitter<any>();
 
   onRowClick(row: any) {
     this.rowClick.emit(row);
@@ -19,5 +20,9 @@ export class TableComponent {
 
   onRowDbClick(row: any) {
     this.rowDbClick.emit(row);
+  }
+
+  edit(row: any) {
+    this.editRow.emit(row);
   }
 }

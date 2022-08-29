@@ -16,7 +16,7 @@ import {AppRoutingModule} from "./app-routing.module";
     BrowserAnimationsModule,
     HttpClientModule,
     SharedUiLayoutModule,
-    FeatureHomeModule
+    FeatureHomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

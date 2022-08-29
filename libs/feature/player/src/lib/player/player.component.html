@@ -1,0 +1,9 @@
+<golden-state-management-page-wrapper
+  [title]="firstName"
+  [isLoader]="true"
+  [resource]="player$ | async">
+  <ng-container *ngIf="player$ |async as player">
+    <div class="first-name">{{player.firstName}}</div>
+  </ng-container>
+<div class="name"></div>
+</golden-state-management-page-wrapper>

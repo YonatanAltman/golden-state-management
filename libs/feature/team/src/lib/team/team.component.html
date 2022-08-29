@@ -2,6 +2,6 @@
 <golden-state-management-table
   [config]="config"
   [data]="players$ | async"
-  (rowDbClick)="setRow($event)"
+  (editRow)="editRow($event)"
 ></golden-state-management-table>
 </golden-state-management-page-wrapper>

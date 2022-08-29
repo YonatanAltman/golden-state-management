@@ -3,6 +3,7 @@ import {TeamService} from "./team.service";
 import {combineLatest, map, ReplaySubject, startWith} from "rxjs";
 import {Player} from "@golden-state-management/api-interfaces";
 import {TableConfig} from "@golden-state-management/shared/ui-layout";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'golden-state-management-team',
@@ -29,13 +30,14 @@ export class TeamComponent {
       {label: 'Last Name', type: 'lastName', class: 'col-2'},
       {label: 'Age', type: 'age', class: 'col-1'},
       {label: 'College', type: 'college', class: 'col-4'},
-    ]
+    ],
+    editable: true
   };
 
-  constructor(private service: TeamService) {
+  constructor(private service: TeamService, private router: Router) {
   }
 
-  setRow($event: any) {
-    console.log($event)
+  editRow($event: any) {
+    return this.router.navigateByUrl(`/player/${$event.id}`)
   }
 }

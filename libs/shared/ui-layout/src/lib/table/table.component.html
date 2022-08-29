@@ -2,12 +2,23 @@
   <ul class="responsive-table">
     <li class="table-header">
       <div class="col" [class]="column.class" *ngFor="let column of config.columns">{{column.label}}</div>
+      <div class="col col-1 edit" *ngIf="config.editable"></div>
     </li>
     <div class="scroller">
 
       <li class="table-row" *ngFor="let row of data" (click)="onRowClick(row)" (dblclick)="onRowDbClick(row)">
-        <div *ngFor="let column of config.columns" class="col"
+        <div *ngFor="let column of config.columns" class="col text"
              [class]="column.class">{{row[column.type]}}</div>
+        <div class="col col-1 edit"
+             *ngIf="config.editable">
+          <button mat-button (click)="edit(row)">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
+              <path
+                d="M20.417 34.583v-2.666l8.791-8.792 2.667 2.667-8.792 8.791Zm-15-8.541v-2.084H17.5v2.084Zm27.958-1.709-2.708-2.708 1.208-1.208q.292-.292.729-.292.438 0 .771.292l1.208 1.208q.292.333.292.771 0 .437-.292.729ZM5.417 19.292v-2.125h18.958v2.125Zm0-6.792v-2.083h18.958V12.5Z"/>
+            </svg>
+
+          </button>
+        </div>
       </li>
     </div>
   </ul>

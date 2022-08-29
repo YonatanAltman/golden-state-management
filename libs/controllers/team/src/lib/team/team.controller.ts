@@ -1,4 +1,4 @@
-import {Controller, Get} from '@nestjs/common';
+import {Controller, Get, Param} from '@nestjs/common';
 import {mockDb} from "./team.mock";
 import {TeamService} from "./team.service";
 import * as fs from "fs";
@@ -38,6 +38,16 @@ export class TeamController {
         player.jersey = player?.leagues?.standard?.jersey || '-';
         return player
       });
+    } catch (error) {
+      return {error}
+    }
+  }
+  @Get('player/:id')
+  getPlayer(@Param('id') id:string): any {
+    try {
+      const rawData = fs.readFileSync('libs/controllers/team/src/lib/players.json');
+      const data = JSON.parse(rawData.toString());
+      return data.response.find(player => ''+player?.id === ''+id);
     } catch (error) {
       return {error}
     }

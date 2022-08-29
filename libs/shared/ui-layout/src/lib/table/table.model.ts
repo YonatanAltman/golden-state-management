@@ -7,4 +7,5 @@ export interface TableColumn<T> {
 export interface TableConfig<T = any> {
   title: string;
   columns: TableColumn<T>[];
+  editable?: boolean;
 }

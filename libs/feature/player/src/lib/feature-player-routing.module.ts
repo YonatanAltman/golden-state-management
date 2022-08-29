@@ -1,14 +1,14 @@
 import {NgModule} from '@angular/core';
 import {RouterModule} from "@angular/router";
-import {TeamComponent} from "./team/team.component";
+import {PlayerComponent} from "./player/player.component";
 
 
 @NgModule({
   imports: [RouterModule.forChild([
     {
-      path: '', component: TeamComponent
-    }
+      path: ':id', component: PlayerComponent
+    },
   ])],
 })
-export class FeatureTeamRoutingModule {
+export class FeaturePlayerRoutingModule {
 }
