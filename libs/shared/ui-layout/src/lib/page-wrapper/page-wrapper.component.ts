@@ -9,6 +9,7 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 export class PageWrapperComponent {
   @Input() title!: string;
   @Input() resource?: any;
+  @Input() returnUrl?: string;
   @Input() isLoader = false;
 
 }

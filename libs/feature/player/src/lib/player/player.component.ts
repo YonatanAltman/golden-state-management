@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {Observable, ReplaySubject, switchMap, tap} from "rxjs";
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {Observable, switchMap, tap} from "rxjs";
 import {Player} from "@golden-state-management/api-interfaces";
 import {ActivatedRoute} from "@angular/router";
 import {PlayerService} from "./player.service";
@@ -19,9 +19,12 @@ export class PlayerComponent {
   }
 
   private getPlayer$(): Observable<Player> {
-    return this.activatedRoute.paramMap.pipe(switchMap(params => this.service.getPlayer(params.get('id')).pipe(tap(player => {
-      this.firstName = player.firstName;
-    }))))
+    return this.activatedRoute.paramMap.pipe(switchMap(
+      params =>
+        this.service.getPlayer(params.get('id'))
+          .pipe(tap(player => {
+            this.firstName = player.firstName
+          }))))
 
   }
 }

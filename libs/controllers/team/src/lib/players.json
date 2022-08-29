@@ -36,7 +36,8 @@
           "active": true,
           "pos": "F"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3155535.png&w=350&h=254"
     },
     {
       "id": 593,
@@ -77,7 +78,8 @@
           "active": true,
           "pos": "G"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3134903.png&w=350&h=254"
     },
     {
       "id": 599,
@@ -108,7 +110,8 @@
           "active": true,
           "pos": "G-F"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2595209.png&w=350&h=254"
     },
     {
       "id": 738,
@@ -149,89 +152,8 @@
           "active": true,
           "pos": "F"
         }
-      }
-    },
-    {
-      "id": 1011,
-      "firstName": "Cameron",
-      "lastName": "Oliver",
-      "birth": {
-        "date": "1996-07-11",
-        "country": "USA"
       },
-      "nba": {
-        "start": 2020,
-        "pro": 1
-      },
-      "height": {
-        "feets": "6",
-        "inches": "8",
-        "meters": "2.03"
-      },
-      "weight": {
-        "pounds": "239",
-        "kilograms": "108.4"
-      },
-      "college": "Nevada",
-      "affiliation": "Nevada/USA",
-      "leagues": {
-        "standard": {
-          "jersey": 21,
-          "active": true,
-          "pos": "F"
-        },
-        "vegas": {
-          "jersey": 27,
-          "active": true,
-          "pos": "F"
-        },
-        "sacramento": {
-          "jersey": 27,
-          "active": true,
-          "pos": "F"
-        }
-      }
-    },
-    {
-      "id": 2201,
-      "firstName": "Mychal",
-      "lastName": "Mulder",
-      "birth": {
-        "date": null,
-        "country": null
-      },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": null,
-        "inches": null,
-        "meters": null
-      },
-      "weight": {
-        "pounds": null,
-        "kilograms": null
-      },
-      "college": null,
-      "affiliation": null,
-      "leagues": {
-        "vegas": {
-          "jersey": 11,
-          "active": true,
-          "pos": "G"
-        },
-        "standard": {
-          "jersey": 12,
-          "active": true,
-          "pos": "G"
-        },
-        "sacramento": {
-          "jersey": 15,
-          "active": true,
-          "pos": "G"
-        }
-      }
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064427.png&w=350&h=254"
     },
     {
       "id": 1069,
@@ -267,89 +189,8 @@
           "active": true,
           "pos": "G"
         }
-      }
-    },
-    {
-      "id": 1934,
-      "firstName": "Juan",
-      "lastName": "Toscano-Anderson",
-      "birth": {
-        "date": null,
-        "country": null
       },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": null,
-        "inches": null,
-        "meters": null
-      },
-      "weight": {
-        "pounds": null,
-        "kilograms": null
-      },
-      "college": null,
-      "affiliation": null,
-      "leagues": {
-        "sacramento": {
-          "jersey": 8,
-          "active": true,
-          "pos": "F"
-        },
-        "vegas": {
-          "jersey": 8,
-          "active": true,
-          "pos": "F"
-        },
-        "standard": {
-          "jersey": 95,
-          "active": true,
-          "pos": "F"
-        }
-      }
-    },
-    {
-      "id": 1861,
-      "firstName": "Kyle",
-      "lastName": "Guy",
-      "birth": {
-        "date": "1997-08-11",
-        "country": "USA"
-      },
-      "nba": {
-        "start": 2019,
-        "pro": 2
-      },
-      "height": {
-        "feets": "6",
-        "inches": "1",
-        "meters": "1.85"
-      },
-      "weight": {
-        "pounds": "167",
-        "kilograms": "75.8"
-      },
-      "college": "Virginia",
-      "affiliation": "Virginia/USA",
-      "leagues": {
-        "standard": {
-          "jersey": 5,
-          "active": true,
-          "pos": "G"
-        },
-        "sacramento": {
-          "jersey": 50,
-          "active": true,
-          "pos": "G"
-        },
-        "vegas": {
-          "jersey": 50,
-          "active": true,
-          "pos": "G"
-        }
-      }
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3137795.png&w=350&h=254"
     },
     {
       "id": 1887,
@@ -390,7 +231,8 @@
           "active": true,
           "pos": "G"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4277956.png&w=350&h=254"
     },
     {
       "id": 1899,
@@ -431,79 +273,8 @@
           "active": true,
           "pos": "G"
         }
-      }
-    },
-    {
-      "id": 2924,
-      "firstName": "Ryan",
-      "lastName": "Taylor",
-      "birth": {
-        "date": "1995-02-01",
-        "country": "USA"
       },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "6",
-        "meters": "1.98"
-      },
-      "weight": {
-        "pounds": "190",
-        "kilograms": "86.2"
-      },
-      "college": "Northwestern",
-      "affiliation": "Northwestern/USA",
-      "leagues": {
-        "sacramento": {
-          "jersey": 41,
-          "active": true,
-          "pos": "G"
-        },
-        "vegas": {
-          "jersey": 41,
-          "active": true,
-          "pos": "G"
-        }
-      }
-    },
-    {
-      "id": 2920,
-      "firstName": "Kendall",
-      "lastName": "Smith",
-      "birth": {
-        "date": "1995-09-18",
-        "country": "USA"
-      },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "3",
-        "meters": "1.9"
-      },
-      "weight": {
-        "pounds": "190",
-        "kilograms": "86.2"
-      },
-      "college": "Oklahoma State",
-      "affiliation": "Oklahoma State/USA",
-      "leagues": {
-        "sacramento": {
-          "jersey": null,
-          "active": true,
-          "pos": "G"
-        },
-        "vegas": {
-          "jersey": 12,
-          "active": true,
-          "pos": "G"
-        }
-      }
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3907358.png&w=350&h=254"
     },
     {
       "id": 2666,
@@ -534,7 +305,8 @@
           "active": true,
           "pos": "C"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432808.png&w=350&h=254"
     },
     {
       "id": 2827,
@@ -575,238 +347,8 @@
           "active": true,
           "pos": "F"
         }
-      }
-    },
-    {
-      "id": 2674,
-      "firstName": "Kahlil",
-      "lastName": "Whitney",
-      "birth": {
-        "date": null,
-        "country": null
       },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": null,
-        "inches": null,
-        "meters": null
-      },
-      "weight": {
-        "pounds": null,
-        "kilograms": null
-      },
-      "college": null,
-      "affiliation": null,
-      "leagues": {
-        "standard": {
-          "jersey": 5,
-          "active": false,
-          "pos": null
-        },
-        "sacramento": {
-          "jersey": 6,
-          "active": true,
-          "pos": "F"
-        },
-        "vegas": {
-          "jersey": 6,
-          "active": true,
-          "pos": "F"
-        }
-      }
-    },
-    {
-      "id": 2940,
-      "firstName": "Derrick",
-      "lastName": "Alston Jr.",
-      "birth": {
-        "date": "1997-09-17",
-        "country": "USA"
-      },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "9",
-        "meters": "2.06"
-      },
-      "weight": {
-        "pounds": "190",
-        "kilograms": "86.2"
-      },
-      "college": "Boise State",
-      "affiliation": "Boise State/USA",
-      "leagues": {
-        "vegas": {
-          "jersey": 29,
-          "active": true,
-          "pos": "F"
-        },
-        "standard": {
-          "jersey": 10,
-          "active": true,
-          "pos": "F"
-        }
-      }
-    },
-    {
-      "id": 2603,
-      "firstName": "Justinian",
-      "lastName": "Jessup",
-      "birth": {
-        "date": null,
-        "country": null
-      },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": null,
-        "inches": null,
-        "meters": null
-      },
-      "weight": {
-        "pounds": null,
-        "kilograms": null
-      },
-      "college": null,
-      "affiliation": null,
-      "leagues": {
-        "standard": {
-          "jersey": null,
-          "active": true,
-          "pos": "G"
-        },
-        "sacramento": {
-          "jersey": 10,
-          "active": true,
-          "pos": "G"
-        },
-        "vegas": {
-          "jersey": 10,
-          "active": true,
-          "pos": "G"
-        }
-      }
-    },
-    {
-      "id": 2878,
-      "firstName": "Jeff",
-      "lastName": "Dowtin",
-      "birth": {
-        "date": "1997-05-10",
-        "country": "USA"
-      },
-      "nba": {
-        "start": 2021,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "3",
-        "meters": "1.9"
-      },
-      "weight": {
-        "pounds": "180",
-        "kilograms": "81.6"
-      },
-      "college": "Rhode Island",
-      "affiliation": "Rhode Island/USA",
-      "leagues": {
-        "sacramento": {
-          "jersey": 25,
-          "active": true,
-          "pos": "G"
-        },
-        "vegas": {
-          "jersey": 40,
-          "active": true,
-          "pos": "G"
-        },
-        "standard": {
-          "jersey": 15,
-          "active": true,
-          "pos": "G"
-        }
-      }
-    },
-    {
-      "id": 2906,
-      "firstName": "Elijah",
-      "lastName": "Pemberton",
-      "birth": {
-        "date": "1997-05-31",
-        "country": "USA"
-      },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "5",
-        "meters": "1.96"
-      },
-      "weight": {
-        "pounds": "195",
-        "kilograms": "88.5"
-      },
-      "college": "Hofstra",
-      "affiliation": "Hofstra/USA",
-      "leagues": {
-        "sacramento": {
-          "jersey": 31,
-          "active": true,
-          "pos": "G"
-        },
-        "vegas": {
-          "jersey": 31,
-          "active": true,
-          "pos": "G"
-        }
-      }
-    },
-    {
-      "id": 2892,
-      "firstName": "Selom",
-      "lastName": "Mawugbe",
-      "birth": {
-        "date": "1998-07-20",
-        "country": "USA"
-      },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "10",
-        "meters": "2.08"
-      },
-      "weight": {
-        "pounds": "230",
-        "kilograms": "104.3"
-      },
-      "college": "Azusa Pacific",
-      "affiliation": "Azusa Pacific/USA",
-      "leagues": {
-        "sacramento": {
-          "jersey": 21,
-          "active": true,
-          "pos": "C"
-        },
-        "vegas": {
-          "jersey": 21,
-          "active": true,
-          "pos": "C"
-        }
-      }
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433247.png&w=350&h=254"
     },
     {
       "id": 2836,
@@ -847,156 +389,8 @@
           "active": true,
           "pos": "G"
         }
-      }
-    },
-    {
-      "id": 2895,
-      "firstName": "JaQuori",
-      "lastName": "McLaughlin",
-      "birth": {
-        "date": "1998-01-29",
-        "country": "USA"
       },
-      "nba": {
-        "start": 2021,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "4",
-        "meters": "1.93"
-      },
-      "weight": {
-        "pounds": "190",
-        "kilograms": "86.2"
-      },
-      "college": "Cal-Santa Barbara",
-      "affiliation": "California-Santa Barbara/USA",
-      "leagues": {
-        "sacramento": {
-          "jersey": 40,
-          "active": true,
-          "pos": "G"
-        },
-        "vegas": {
-          "jersey": 40,
-          "active": true,
-          "pos": "G"
-        },
-        "standard": {
-          "jersey": null,
-          "active": true,
-          "pos": "G"
-        }
-      }
-    },
-    {
-      "id": 2914,
-      "firstName": "Jordan",
-      "lastName": "Schakel",
-      "birth": {
-        "date": "1998-06-13",
-        "country": "USA"
-      },
-      "nba": {
-        "start": 2021,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "6",
-        "meters": "1.98"
-      },
-      "weight": {
-        "pounds": "200",
-        "kilograms": "90.7"
-      },
-      "college": "San Diego State",
-      "affiliation": "San Diego State/USA",
-      "leagues": {
-        "sacramento": {
-          "jersey": 43,
-          "active": true,
-          "pos": "G"
-        },
-        "vegas": {
-          "jersey": 43,
-          "active": true,
-          "pos": "G"
-        },
-        "standard": {
-          "jersey": 20,
-          "active": true,
-          "pos": "G"
-        }
-      }
-    },
-    {
-      "id": 2913,
-      "firstName": "Colbey",
-      "lastName": "Ross",
-      "birth": {
-        "date": "1998-10-22",
-        "country": "USA"
-      },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "1",
-        "meters": "1.85"
-      },
-      "weight": {
-        "pounds": "180",
-        "kilograms": "81.6"
-      },
-      "college": "Pepperdine",
-      "affiliation": "Pepperdine/USA",
-      "leagues": {
-        "sacramento": {
-          "jersey": 18,
-          "active": true,
-          "pos": "G"
-        },
-        "vegas": {
-          "jersey": 18,
-          "active": true,
-          "pos": "G"
-        }
-      }
-    },
-    {
-      "id": 3388,
-      "firstName": "L.J.",
-      "lastName": "Figueroa",
-      "birth": {
-        "date": null,
-        "country": null
-      },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": null,
-        "inches": null,
-        "meters": null
-      },
-      "weight": {
-        "pounds": null,
-        "kilograms": null
-      },
-      "college": null,
-      "affiliation": null,
-      "leagues": {
-        "standard": {
-          "jersey": 25,
-          "active": false,
-          "pos": null
-        }
-      }
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432171.png&w=350&h=254"
     },
     {
       "id": 124,
@@ -1027,7 +421,8 @@
           "active": true,
           "pos": "G"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3975.png&w=350&h=254"
     },
     {
       "id": 68,
@@ -1089,7 +484,8 @@
           "active": true,
           "pos": "F"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4269.png&w=350&h=254"
     },
     {
       "id": 514,
@@ -1120,7 +516,8 @@
           "active": true,
           "pos": "G"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6475.png&w=350&h=254"
     },
     {
       "id": 204,
@@ -1151,7 +548,8 @@
           "active": true,
           "pos": "F"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6589.png&w=350&h=254"
     },
     {
       "id": 430,
@@ -1182,7 +580,8 @@
           "active": true,
           "pos": "F"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2594922.png&w=350&h=254"
     },
     {
       "id": 548,
@@ -1213,110 +612,8 @@
           "active": true,
           "pos": "F"
         }
-      }
-    },
-    {
-      "id": 182,
-      "firstName": "Langston",
-      "lastName": "Galloway",
-      "birth": {
-        "date": "1991-12-09",
-        "country": "USA"
       },
-      "nba": {
-        "start": 2014,
-        "pro": 0
-      },
-      "height": {
-        "feets": null,
-        "inches": null,
-        "meters": null
-      },
-      "weight": {
-        "pounds": null,
-        "kilograms": null
-      },
-      "college": "St. Joseph's (PA)",
-      "affiliation": "St. Joseph's (PA)/USA",
-      "leagues": {
-        "standard": {
-          "jersey": 12,
-          "active": false,
-          "pos": null
-        }
-      }
-    },
-    {
-      "id": 2899,
-      "firstName": "Travis",
-      "lastName": "Munnings",
-      "birth": {
-        "date": "1994-09-14",
-        "country": null
-      },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "6",
-        "meters": "1.98"
-      },
-      "weight": {
-        "pounds": "200",
-        "kilograms": "90.7"
-      },
-      "college": "Louisiana-Monroe",
-      "affiliation": null,
-      "leagues": {
-        "sacramento": {
-          "jersey": 45,
-          "active": true,
-          "pos": "F"
-        },
-        "vegas": {
-          "jersey": 45,
-          "active": true,
-          "pos": "F"
-        }
-      }
-    },
-    {
-      "id": 2930,
-      "firstName": "Tim",
-      "lastName": "Williams",
-      "birth": {
-        "date": "1993-11-06",
-        "country": null
-      },
-      "nba": {
-        "start": 0,
-        "pro": 0
-      },
-      "height": {
-        "feets": "6",
-        "inches": "8",
-        "meters": "2.03"
-      },
-      "weight": {
-        "pounds": "220",
-        "kilograms": "99.8"
-      },
-      "college": "Kentucky",
-      "affiliation": null,
-      "leagues": {
-        "sacramento": {
-          "jersey": 36,
-          "active": true,
-          "pos": "F"
-        },
-        "vegas": {
-          "jersey": 36,
-          "active": true,
-          "pos": "F"
-        }
-      }
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3059319.png&w=350&h=254"
     },
     {
       "id": 256,
@@ -1347,7 +644,8 @@
           "active": true,
           "pos": "G-F"
         }
-      }
+      },
+      "image": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2386.png&w=350&h=254"
     }
   ]
 }

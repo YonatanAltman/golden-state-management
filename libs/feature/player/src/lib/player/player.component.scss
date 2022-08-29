@@ -1,0 +1,14 @@
+@import "color";
+:host{
+  .image{
+    img{
+      height: 200px;
+      width: auto;
+    }
+  }
+  .field{
+    max-width: 200px;
+    font-size: large;
+    border-bottom: solid $yellow-hover 1px;
+  }
+}

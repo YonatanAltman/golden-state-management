@@ -1,9 +1,23 @@
 <golden-state-management-page-wrapper
   [title]="firstName"
   [isLoader]="true"
-  [resource]="player$ | async">
+  [resource]="player$ | async"
+  [returnUrl]="'team'">
   <ng-container *ngIf="player$ |async as player">
-    <div class="first-name">{{player.firstName}}</div>
+    <div class="field first-name">
+      <h3>Name</h3>
+      <span>
+      {{player.firstName}} {{player.lastName}}
+      </span>
+    </div>
+    <div class="field college">
+      <h3>college</h3>
+      <span>
+      {{player.college}}
+      </span>
+    </div>
+    <div class="image">
+      <img [src]="player.image" [alt]="player.firstName">
+    </div>
   </ng-container>
-<div class="name"></div>
 </golden-state-management-page-wrapper>

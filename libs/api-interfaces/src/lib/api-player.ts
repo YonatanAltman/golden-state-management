@@ -11,6 +11,7 @@ export interface BaseTeamMember {
   lastName: string;
   age: number;
   salary: number;
+  image: string;
 }
 
 export interface Player extends BaseTeamMember {

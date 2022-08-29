@@ -18,10 +18,7 @@ export class TeamComponent {
   players$ = combineLatest([
     this.service.getPlayers(),
     this.filter$.pipe(startWith(''))
-  ]).pipe(map(([list, str]: [Player[], string]) => {
-    console.log('list', list)
-    return list?.filter(p => !str || p.firstName.includes(str) || p.lastName.includes(str));
-  }));
+  ]).pipe(map(([list, str]: [Player[], string]) => list?.filter(p => !str || p.firstName.includes(str) || p.lastName.includes(str))));
   config: TableConfig<Player> = {
     title: 'Players List',
     columns: [
