@@ -34,6 +34,7 @@ export class TeamComponent {
   constructor(private service: TeamService, private router: Router) {
   }
 
+// causes http call
   editRow($event: any) {
     return this.router.navigateByUrl(`/player/${$event.id}`)
   }
