@@ -2,9 +2,12 @@
   <ng-container *ngIf="logo">
     <img [src]="logo" alt="logo" routerLink="/home">
   </ng-container>
-<ng-container *ngFor="let nav of navs">
-  <button mat-button color="primary" [routerLink]="nav.link">
-    {{nav.label}}
-  </button>
-</ng-container>
+  <div class="navs">
+
+    <ng-container *ngFor="let nav of navs">
+      <button mat-button color="primary" [routerLink]="nav.link" [routerLinkActive]="'active'">
+        {{nav.label}}
+      </button>
+    </ng-container>
+  </div>
 </div>

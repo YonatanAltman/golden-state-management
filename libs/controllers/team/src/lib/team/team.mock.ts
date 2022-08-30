@@ -1,14 +1,13 @@
-import {Player, Team} from "@golden-state-management/api-interfaces";
+import {Team} from "@golden-state-management/api-interfaces";
 
-const PLAYERS:Player[] = [
-]
 export const DB_MOCK_TEAM: Team = {
-  name:'Golden State Warriors',
+  name: 'Golden State Warriors',
   couch: {
     firstName: '',
     lastName: '',
     age: 50,
-    salary: 2000000
+    salary: 2000000,
+    image: ''
   },
   state: 'California',
   players: [],

@@ -1,4 +1,5 @@
-@import "color.scss";
+@import "color";
+
 :host {
   width: 200px;
   background: $yellow;
@@ -17,8 +18,20 @@
       margin: auto;
     }
 
+    .navs {
+      display: flex;
+      flex-flow: column;
+      margin-top: 20px;
+      row-gap: 10px;
+    }
+
     button {
       text-transform: capitalize;
+      font-size: large;
+      transition: ease-in-out .2s;
+      &.active{
+        border-right: solid $primary-blue 4px;
+      }
     }
   }
 }
