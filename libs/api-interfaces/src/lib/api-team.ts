@@ -1,9 +1,10 @@
 import {BaseTeamMember, Player} from "./api-player";
 
 export interface Team {
-  name: string;
+  name:string;
+  coach: BaseTeamMember;
   players: Player[];
-  couch: BaseTeamMember;
-  state: string;
-  home: string;
+  state?:string;
+  home?:string;
+  homeImages: string[];
 }

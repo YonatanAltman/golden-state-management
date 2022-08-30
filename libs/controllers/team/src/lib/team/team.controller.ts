@@ -1,21 +1,36 @@
 import {Controller, Get, Param} from '@nestjs/common';
 import {mockDb} from "./team.mock";
-import {TeamService} from "./team.service";
 import * as fs from "fs";
+import {Team} from "@golden-state-management/api-interfaces";
 
 @Controller('team')
 export class TeamController {
   db = mockDb();
 
-  constructor(private service: TeamService) {
-  }
-
   @Get()
   getData() {
+    const team: Partial<Team> = {
+      coach: {
+        id: 20202,
+        firstName: 'Steve',
+        lastName: 'Kerr',
+        image: 'https://basketballforever.com/wp-content/uploads/2022/08/sk.jpg',
+        age: 57,
+        salary: 1000000
+      },
+      homeImages: [
+        'https://cdn.nba.com/manage/2020/10/chase-center-exterior-784x441.jpg',
+        'https://cdn.nba.com/manage/2020/10/chase-center-baseline-1-784x523.jpg',
+      ]
+    }
     try {
-      const rawData = fs.readFileSync('libs/controllers/team/src/lib/teams.json');
+      const rawData = fs.readFileSync('libs/controllers/team/src/lib/players.json');
       const data = JSON.parse(rawData.toString());
-      return data.response;
+      team.players = data.response.map(player => {
+        player.jersey = player?.leagues?.standard?.jersey || '-';
+        return player
+      });
+      return team;
     } catch (error) {
       return {error}
     }
@@ -34,7 +49,7 @@ export class TeamController {
     try {
       const rawData = fs.readFileSync('libs/controllers/team/src/lib/players.json');
       const data = JSON.parse(rawData.toString());
-      return data.response.map(player =>{
+      return data.response.map(player => {
         player.jersey = player?.leagues?.standard?.jersey || '-';
         return player
       });
@@ -42,12 +57,13 @@ export class TeamController {
       return {error}
     }
   }
+
   @Get('player/:id')
-  getPlayer(@Param('id') id:string): any {
+  getPlayer(@Param('id') id: string): any {
     try {
       const rawData = fs.readFileSync('libs/controllers/team/src/lib/players.json');
       const data = JSON.parse(rawData.toString());
-      return data.response.find(player => ''+player?.id === ''+id);
+      return data.response.find(player => '' + player?.id === '' + id);
     } catch (error) {
       return {error}
     }
