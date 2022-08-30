@@ -11,6 +11,7 @@
     "golden-state-warriors": "apps/golden-state-warriors",
     "golden-state-warriors-e2e": "apps/golden-state-warriors-e2e",
     "shared-ui-layout": "libs/shared/ui-layout",
+    "store": "libs/store",
     "util-style-color": "libs/util/style-color"
   }
 }

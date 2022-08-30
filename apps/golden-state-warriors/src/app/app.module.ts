@@ -4,9 +4,13 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {SharedUiLayoutModule} from "@golden-state-management/shared/ui-layout";
+import {ENV_CONFIG, SharedUiLayoutModule} from "@golden-state-management/shared/ui-layout";
 import {FeatureHomeModule} from "@golden-state-management/feature/home";
 import {AppRoutingModule} from "./app-routing.module";
+import {StoreModule} from '@ngrx/store';
+import {TeamEffects, teamReducer} from '@golden-state-management/store';
+import {environment} from "../environments/environment";
+import {EffectsModule} from "@ngrx/effects";
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,8 +21,15 @@ import {AppRoutingModule} from "./app-routing.module";
     HttpClientModule,
     SharedUiLayoutModule,
     FeatureHomeModule,
+    StoreModule.forRoot({team: teamReducer}),
+    EffectsModule.forRoot([TeamEffects])
   ],
-  providers: [],
+  providers: [
+    {
+      provide: ENV_CONFIG,
+      useValue: {environment}
+    }
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {

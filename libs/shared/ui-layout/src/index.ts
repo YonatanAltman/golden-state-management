@@ -3,3 +3,4 @@ export * from './lib/page-wrapper/page-wrapper.component';
 export * from './lib/table/table.component';
 export * from './lib/table/table.module';
 export * from './lib/table/table.model';
+export * from './lib/consts/environment-config.interface';
