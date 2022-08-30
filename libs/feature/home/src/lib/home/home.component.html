@@ -1,8 +1,5 @@
 <golden-state-management-page-wrapper [title]="'home works!'|titlecase">
-  <div class="image">
-    <img src="https://cdn.nba.com/manage/2020/10/chase-center-exterior-784x441.jpg" alt="home"/>
-  </div>
-  <div class="image">
-    <img src="https://cdn.nba.com/manage/2020/10/chase-center-baseline-1-784x523.jpg" alt="home"/>
+  <div class="image" *ngFor="let image of images$|async">
+    <img [src]="image" alt="home"/>
   </div>
 </golden-state-management-page-wrapper>

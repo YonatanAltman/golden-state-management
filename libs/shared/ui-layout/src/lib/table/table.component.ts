@@ -9,7 +9,7 @@ import {TableConfig} from "./table.model";
 })
 export class TableComponent {
   @Input() config!: TableConfig;
-  @Input() data!: any[] | null;
+  @Input() data!: any[] | null|undefined;
   @Output() rowClick = new EventEmitter<any>();
   @Output() rowDbClick = new EventEmitter<any>();
   @Output() editRow = new EventEmitter<any>();

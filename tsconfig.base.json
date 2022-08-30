@@ -34,6 +34,7 @@
       "@golden-state-management/shared/ui-layout": [
         "libs/shared/ui-layout/src/index.ts"
       ],
+      "@golden-state-management/store": ["libs/store/src/index.ts"],
       "@golden-state-management/util/style-color": [
         "libs/util/style-color/src/index.ts"
       ]

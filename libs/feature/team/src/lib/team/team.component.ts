@@ -1,9 +1,10 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {TeamService} from "./team.service";
 import {combineLatest, map, ReplaySubject, startWith} from "rxjs";
-import {Player} from "@golden-state-management/api-interfaces";
+import {Player, Team} from "@golden-state-management/api-interfaces";
 import {TableConfig} from "@golden-state-management/shared/ui-layout";
 import {Router} from "@angular/router";
+import {Store} from "@ngrx/store";
 
 @Component({
   selector: 'golden-state-management-team',
@@ -16,7 +17,7 @@ export class TeamComponent {
   public title = 'Team';
   public filter$ = new ReplaySubject<string>(1);
   players$ = combineLatest([
-    this.service.getPlayers(),
+    this.store.select((state => state.team?.players)),
     this.filter$.pipe(startWith(''))
   ]).pipe(map(([list, str]: [Player[], string]) => list?.filter(p => !str || p.firstName.includes(str) || p.lastName.includes(str))));
   config: TableConfig<Player> = {
@@ -31,11 +32,13 @@ export class TeamComponent {
     editable: true
   };
 
-  constructor(private service: TeamService, private router: Router) {
+  constructor(private service: TeamService, private router: Router, private store: Store<{ team:Team }>) {
   }
 
 // causes http call
   editRow($event: any) {
     return this.router.navigateByUrl(`/player/${$event.id}`)
   }
+
+
 }
