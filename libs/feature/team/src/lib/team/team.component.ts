@@ -32,7 +32,9 @@ export class TeamComponent {
     editable: true
   };
 
-  constructor(private service: TeamService, private router: Router, private store: Store<{ team:Team }>) {
+  constructor(private service: TeamService,
+              private router: Router,
+              private store: Store<{ team:Team }>) {
   }
 
 // causes http call
