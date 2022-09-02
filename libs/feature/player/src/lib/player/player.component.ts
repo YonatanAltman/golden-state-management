@@ -16,17 +16,14 @@ export class PlayerComponent {
   player$ = this.getPlayer$();
   firstName = 'Player';
 
-  constructor(private activatedRoute: ActivatedRoute, private service: PlayerService, private store: Store<{ team: Team }>) {
+  constructor(private activatedRoute: ActivatedRoute, private service: PlayerService) {
   }
 
   private getPlayer$(): Observable<Player | undefined> {
-    return this.activatedRoute.paramMap.pipe(switchMap(
-      params =>
-        // this.service.getPlayer(params.get('id'))
-        this.store.select(state => state.team?.players?.find(p => '' + p.id === '' + params.get('id')))
-          .pipe(tap(player => {
-            this.firstName = player?.firstName || 'No player';
-          }))))
+    return this.activatedRoute.paramMap.pipe(
+      switchMap(params => this.service.getPlayer(params.get('id'))),
+      tap(player => this.firstName = player?.firstName || 'Player not found🕵🏻‍♂️')
+    )
 
   }
 }

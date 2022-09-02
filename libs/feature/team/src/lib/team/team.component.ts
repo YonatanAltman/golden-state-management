@@ -17,9 +17,13 @@ export class TeamComponent {
   public title = 'Team';
   public filter$ = new ReplaySubject<string>(1);
   players$ = combineLatest([
-    this.store.select((state => state.team?.players)),
+    this.service.getTeam(),
     this.filter$.pipe(startWith(''))
-  ]).pipe(map(([list, str]: [Player[], string]) => list?.filter(p => !str || p.firstName.includes(str) || p.lastName.includes(str))));
+  ]).pipe(
+    map(([list, str]: [Player[], string]) =>
+      list?.filter(p => !str || p.firstName.includes(str) || p.lastName.includes(str)))
+  );
+
   config: TableConfig<Player> = {
     title: 'Players List',
     columns: [
@@ -33,12 +37,11 @@ export class TeamComponent {
   };
 
   constructor(private service: TeamService,
-              private router: Router,
-              private store: Store<{ team:Team }>) {
+              private router: Router) {
   }
 
 // causes http call
-  editRow($event: any) {
+  editRow($event: Player) {
     return this.router.navigateByUrl(`/player/${$event.id}`)
   }
 
