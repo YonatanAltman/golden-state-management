@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'store',
+  displayName: 'akita',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/libs/ngrx-store',
+  coverageDirectory: '../../coverage/libs/akita',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

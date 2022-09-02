@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "akita-store": "libs/store/akita",
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "controller-team": "libs/controllers/team",
@@ -11,7 +12,8 @@
     "golden-state-warriors": "apps/golden-state-warriors",
     "golden-state-warriors-e2e": "apps/golden-state-warriors-e2e",
     "shared-ui-layout": "libs/shared/ui-layout",
-    "store": "libs/store",
+    "store": "libs/store/ngrx",
+    "store-elf": "libs/store/elf",
     "util-style-color": "libs/util/style-color"
   }
 }

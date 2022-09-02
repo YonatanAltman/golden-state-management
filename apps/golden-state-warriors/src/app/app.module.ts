@@ -8,7 +8,7 @@ import {ENV_CONFIG, SharedUiLayoutModule} from "@golden-state-management/shared/
 import {FeatureHomeModule} from "@golden-state-management/feature/home";
 import {AppRoutingModule} from "./app-routing.module";
 import {StoreModule} from '@ngrx/store';
-import {TeamEffects, teamReducer} from '@golden-state-management/ngrx-store';
+import {TeamEffects, teamReducer} from '@golden-state-management/store/ngrx';
 import {environment} from "../environments/environment";
 import {EffectsModule} from "@ngrx/effects";
 

@@ -9,7 +9,7 @@ import {SharedUiLayoutModule} from "@golden-state-management/shared/ui-layout";
     CommonModule,
     FeaturePlayerRoutingModule,
     SharedUiLayoutModule,
-    // StoreModule.forFeature('team',teamReducer) // in case of feature ngrx-store
+    // StoreModule.forFeature('team',teamReducer) // in case of feature ngrx
   ],
   declarations: [PlayerComponent],
 })
