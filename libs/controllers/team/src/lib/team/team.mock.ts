@@ -2,7 +2,8 @@ import {Team} from "@golden-state-management/api-interfaces";
 
 export const DB_MOCK_TEAM: Team = {
   name: 'Golden State Warriors',
-  couch: {
+  coach: {
+    id:0,
     firstName: '',
     lastName: '',
     age: 50,
@@ -11,6 +12,7 @@ export const DB_MOCK_TEAM: Team = {
   },
   state: 'California',
   players: [],
+  homeImages:[],
   home: 'O'
 }
 
