@@ -1,24 +1,16 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {delay, Observable} from "rxjs";
-import {Player} from "@golden-state-management/api-interfaces";
+import {Store} from "@ngrx/store";
+import {Team} from "@golden-state-management/api-interfaces";
 
 @Injectable()
 export class TeamService {
 
-  constructor(private http: HttpClient) {
+  constructor(private store: Store<{ team:Team }>) {
 
   }
 
-  getTeam(): Observable<Player[]> {
-    return this.http.get<Player[]>('http://localhost:3333/api/team');
-  }
 
-  getLeague() {
-    return this.http.get('http://localhost:3333/api/team/league');
-  }
-
-  getPlayers(): Observable<Player[]> {
-    return this.http.get<Player[]>('http://localhost:3333/api/team/players').pipe(delay(2000));
+  getTeam() {
+    return this.store.select((state => state.team?.players))
   }
 }
