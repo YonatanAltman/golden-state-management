@@ -1,1 +1,1 @@
-export * from './lib/store-elf.module';
+export * from './lib/team.repository';

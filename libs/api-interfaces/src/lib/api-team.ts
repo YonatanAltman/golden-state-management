@@ -1,7 +1,7 @@
 import {BaseTeamMember, Player} from "./api-player";
 
 export interface Team {
-  name:string;
+  name:string|number;
   coach: BaseTeamMember;
   players: Player[];
   state?:string;

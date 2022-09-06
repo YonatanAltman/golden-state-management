@@ -17,7 +17,7 @@ export class TeamComponent {
   public title = 'Team';
   public filter$ = new ReplaySubject<string>(1);
   players$ = combineLatest([
-    this.service.getTeamAkita(),
+    this.service.getTeam(),
     this.filter$.pipe(startWith(''))
   ]).pipe(
     map(([list, str]: [Player[], string]) =>

@@ -17,9 +17,9 @@ export class SideBarComponent {
     {label: 'team', link: 'team'},
   ];
   stateManagement = {
-    link: 'https://opensource.salesforce.com/akita/',
-    logo: 'https://opensource.salesforce.com/akita/img/akita.svg',
-    name: 'Akita'
+    link: 'https://ngneat.github.io/elf/',
+    logo: 'https://ngneat.github.io/elf/img/elf.png',
+    name: 'Elf'
   };
   @Input() logo?: string;
 }
