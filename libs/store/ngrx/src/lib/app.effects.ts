@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
 import {Actions, createEffect, ofType} from '@ngrx/effects';
-import {EMPTY, exhaustMap} from 'rxjs';
+import {exhaustMap} from 'rxjs';
 import {catchError, map} from 'rxjs/operators';
 import {AppApiService} from "@golden-state-management/shared/ui-layout";
-import {getTeamError, getTeam, getTeamSuccess} from "./app.actions";
+import {getTeam, getTeamError, getTeamSuccess} from "./app.actions";
 
 
 @Injectable()
