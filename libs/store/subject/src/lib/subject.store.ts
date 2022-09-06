@@ -5,7 +5,7 @@ import {AppApiService} from "@golden-state-management/shared/ui-layout";
 
 @Injectable({providedIn: 'root'})
 export class TeamSubjectStore implements ITeamStore {
-  private _state: Team;
+  private _state?: Team;
   private _state$ = new ReplaySubject<Team>(1);
 
   constructor(private appApiService: AppApiService) {
@@ -15,7 +15,7 @@ export class TeamSubjectStore implements ITeamStore {
     return this.appApiService.getTeam().subscribe(team => this.update(team));
   }
 
-  public currentState(): Team {
+  public currentState(): Team|undefined {
     return this._state;
   }
 
@@ -33,19 +33,19 @@ export class TeamSubjectStore implements ITeamStore {
   }
 
   getHomeImages$(): Observable<string[]> {
-    return this.state$.pipe(map(team => team.homeImages));
+    return this.state$().pipe(map(team => team.homeImages));
   }
 
   getPlayer$(id: string): Observable<Player> {
-    this.getPlayers$().pipe(map(players => players.find(player => '' + player.id === id)));
+    return this.getPlayers$().pipe(map(players => players.find(player => '' + player.id === id) as Player));
   }
 
   getPlayers$(): Observable<Player[]> {
-    return this.state$.pipe(map(team => team.players));
+    return this.state$().pipe(map(team => team.players));
   }
 
   public resetState(){
-    this.update({});
+    this.update({} as Team);
   }
 
 }

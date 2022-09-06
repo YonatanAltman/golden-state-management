@@ -17,9 +17,9 @@ export class SideBarComponent {
     {label: 'team', link: 'team'},
   ];
   stateManagement = {
-    link: 'https://ngneat.github.io/elf/',
-    logo: 'https://ngneat.github.io/elf/img/elf.png',
-    name: 'Elf'
+    link: 'https://rxjs.dev/guide/subject',
+    logo: 'https://rxjs.dev/generated/images/marketing/home/Rx_Logo-512-512.png',
+    name: 'Subject'
   };
   @Input() logo?: string;
 }

@@ -1,18 +1,14 @@
 import {Injectable} from '@angular/core';
-import {Store} from "@ngrx/store";
-import {Team} from "@golden-state-management/api-interfaces";
-import {TeamQuery} from "@golden-state-management/store/akita";
-import {TeamRepository} from "@golden-state-management/store/elf";
+import {TeamSubjectStore} from '@golden-state-management/store/subject';
 
 @Injectable()
 export class TeamService {
 
-  constructor(private store: Store<{ team:Team }>,private akitaQuery:TeamQuery,private teamRepository:TeamRepository) {
-
+  constructor(private store:TeamSubjectStore) {
   }
 
 
   getTeam() {
-    return this.teamRepository.getPlayers$()
+    return this.store.getPlayers$()
   }
 }

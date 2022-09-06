@@ -14,7 +14,7 @@ export class AppApiService {
     this.baseUrl = this.config.environment.baseUrl;
   }
 
-  getTeam(): Observable<Team|undefined> {
-    return this.http.get<Team[]>(this.baseUrl + '/team').pipe(map(teams => teams.find(team => team.name === GOLDEN_STATE_NAME)));
+  getTeam(): Observable<Team> {
+    return this.http.get<Team[]>(this.baseUrl + '/team').pipe(map(teams => teams.find(team => team.name === GOLDEN_STATE_NAME) as Team));
   }
 }
