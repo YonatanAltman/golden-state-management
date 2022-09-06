@@ -1,8 +1,8 @@
 import {Injectable} from "@angular/core";
 import {createStore, select, withProps} from '@ngneat/elf';
-import {Team, ITeamStore, Player} from "@golden-state-management/api-interfaces";
+import {ITeamStore, Player, Team} from "@golden-state-management/api-interfaces";
 import {AppApiService} from "@golden-state-management/shared/ui-layout";
-import {Observable, of} from "rxjs";
+import {map, Observable} from "rxjs";
 
 export interface TeamProps {
   team: Team | null;
@@ -24,7 +24,6 @@ export class TeamRepository implements ITeamStore {
   }
 
   public init() {
-    console.log('init');
     this.apiService.getTeam().subscribe(team => this.update(team))
   }
 
@@ -39,7 +38,7 @@ export class TeamRepository implements ITeamStore {
   }
 
   getHomeImages$(): Observable<string[]> {
-    return this.store.pipe(select(state => state.team?.homeImages || []));
+    return this.store.pipe(map(state => state.team?.homeImages || []));
   }
 
   getPlayer$(id: string): Observable<Player> {
