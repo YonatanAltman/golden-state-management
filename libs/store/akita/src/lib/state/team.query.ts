@@ -17,7 +17,6 @@ export class TeamQuery extends QueryEntity<TeamState> {
 
   getActivePlayers(): Observable<Player[]> {
     return this.selectActive(entity => (entity.players as Player[]) as any);
-    // todo ron
   }
 
   getPlayer(id: string | undefined): Observable<Player> {
@@ -30,4 +29,5 @@ export class TeamQuery extends QueryEntity<TeamState> {
   getImage(name = GOLDEN_STATE_NAME): Observable<string[]> {
     return this.selectEntity(name).pipe(map(entity => entity?.homeImages || []));
   }
+
 }
