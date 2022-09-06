@@ -3,3 +3,4 @@ import {Team} from "@golden-state-management/api-interfaces";
 
 export const getTeam = createAction('[Team] Get');
 export const getTeamSuccess = createAction('[Team] Get success', props<{payload: Team[]}>());
+export const getTeamError = createAction('[Team] error', props<{payload: Error}>());

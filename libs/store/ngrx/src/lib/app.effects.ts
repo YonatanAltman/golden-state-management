@@ -3,21 +3,21 @@ import {Actions, createEffect, ofType} from '@ngrx/effects';
 import {EMPTY, exhaustMap} from 'rxjs';
 import {catchError, map} from 'rxjs/operators';
 import {AppApiService} from "@golden-state-management/shared/ui-layout";
+import {getTeamError, getTeam, getTeamSuccess} from "./app.actions";
 
 
 @Injectable()
 export class TeamEffects {
 
   loadTeam$ = createEffect(() => this.actions$.pipe(
-      ofType('[Team] Get'),
+      ofType(getTeam.type),
       exhaustMap(() => this.apiService.getTeam()
         .pipe(
-          map(team => {
-              console.log('TeamEffects load team', team);
-              return {type: '[Team] Get success', payload: team};
+          map(teams => {
+              return getTeamSuccess({payload: teams});
             }
           ),
-          catchError(() => EMPTY)
+          catchError((err) => [getTeamError({payload:err})])
         ))
     )
   );
