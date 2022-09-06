@@ -15,13 +15,14 @@ export class TeamQuery extends QueryEntity<TeamState> {
     return this.selectEntity(GOLDEN_STATE_NAME).pipe(map(team => team?.players || []));
   }
 
-  getActivePlayers(): Observable<Player[][]> | Observable<Player[] | undefined> {
-    return this.selectActive(entity => entity.players);
+  getActivePlayers(): Observable<Player[]> {
+    return this.selectActive(entity => (entity.players as Player[]) as any);
+    // todo ron
   }
 
-  getPlayer(id: string | undefined): Observable<Player | undefined> {
+  getPlayer(id: string | undefined): Observable<Player> {
     return this.getPlayers().pipe(map(list => {
-        return list.find(p => '' + p.id === '' + id)
+        return list.find(p => '' + p.id === '' + id) as Player
       }
     ));
   }

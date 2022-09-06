@@ -15,6 +15,6 @@ export class HomeService {
   }
 
   getImages(): Observable<string[]> {
-    return this.teamRepository.getHomeImages$();
+    return this.teamService.getHomeImages$();
   }
 }

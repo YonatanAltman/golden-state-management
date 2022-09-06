@@ -12,6 +12,6 @@ export class PlayerService {
   }
 
   getPlayer(id: string): Observable<Player | undefined> {
-    return this.teamRepository.getPlayer$(id)
+    return this.teamService.getPlayer$(id)
   }
 }
