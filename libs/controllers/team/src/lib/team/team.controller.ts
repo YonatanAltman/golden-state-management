@@ -2,7 +2,7 @@ import {Controller, Get, Param} from '@nestjs/common';
 import {mockDb} from "./team.mock";
 import * as fs from "fs";
 import {Team} from "@golden-state-management/api-interfaces";
-
+const KE_2_SHNIOT = 1991;
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -35,7 +35,10 @@ export class TeamController {
         player.jersey = player?.leagues?.standard?.jersey || '-';
         return player
       });
-      await sleep(2000);
+      console.log('sleep')
+      await sleep(KE_2_SHNIOT);
+      console.log('awake')
+      console.log('------------')
       return [team];
     } catch (error) {
       return {error}
