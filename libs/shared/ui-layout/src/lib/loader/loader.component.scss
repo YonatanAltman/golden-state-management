@@ -13,7 +13,7 @@
 
 .ball {
   position: absolute;
-  background-color: #e76f51;
+  background-color: #b43b08;
   border-radius:50%;
   width:100px;
   height:100px;
@@ -78,7 +78,7 @@
   top:95px;
   z-index:-1;
   left:3px;
-  animation: scale 1.5s ease-in infinite;
+  animation: scale 2.5s ease-in infinite;
 }
 
 @keyframes scale {
