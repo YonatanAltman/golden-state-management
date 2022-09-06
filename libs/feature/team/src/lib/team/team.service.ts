@@ -7,7 +7,7 @@ import {TeamRepository} from "@golden-state-management/store/elf";
 @Injectable()
 export class TeamService {
 
-  constructor(private store: Store<{ team:Team }>,private akitaQuery:TeamQuery,private teamRepository:TeamRepository) {
+  constructor(private teamRepository:TeamRepository) {
 
   }
 

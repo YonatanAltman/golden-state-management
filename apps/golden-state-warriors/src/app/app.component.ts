@@ -1,7 +1,4 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {Store} from "@ngrx/store";
-import {Player} from "@golden-state-management/api-interfaces";
-import {TeamService} from "@golden-state-management/store/akita";
 import {TeamRepository} from "@golden-state-management/store/elf";
 
 @Component({
@@ -13,12 +10,10 @@ import {TeamRepository} from "@golden-state-management/store/elf";
 export class AppComponent implements OnInit {
   logoUrl = 'https://teamcolorcodes.com/wp-content/uploads/2017/03/warriors_logo_colors.png?ezimgfmt=rs:200x244/rscb9/ng:webp/ngcb9';
 
-  constructor(private store: Store<{ team: Player[] }>, private akitaTeamService:TeamService,private teamRepository:TeamRepository) {
+  constructor(private teamRepository:TeamRepository) {
   }
 
   ngOnInit(): void {
-    // this.store.dispatch({type: '[Team] Get'});
-    // this.akitaTeamService.init();
     this.teamRepository.init();
   }
 }

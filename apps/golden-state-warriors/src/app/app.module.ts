@@ -22,21 +22,14 @@ import {NG_ENTITY_SERVICE_CONFIG} from "@datorama/akita-ng-entity-service";
     BrowserAnimationsModule,
     HttpClientModule,
     SharedUiLayoutModule,
-    FeatureHomeModule,
-    StoreModule.forRoot({team: teamReducer}),
-    EffectsModule.forRoot([TeamEffects]),
+    // StoreModule.forRoot({team: teamReducer}),
+    // EffectsModule.forRoot([TeamEffects]),
     environment.production ? [] : AkitaNgDevtools.forRoot()
   ],
   providers: [
     {
       provide: ENV_CONFIG,
       useValue: {environment}
-    },
-    {
-      provide: NG_ENTITY_SERVICE_CONFIG,
-      useValue: {
-        baseUrl: environment.baseUrl
-      }
     }
   ],
   bootstrap: [AppComponent],

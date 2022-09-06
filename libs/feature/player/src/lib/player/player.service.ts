@@ -8,7 +8,7 @@ import {TeamRepository} from "@golden-state-management/store/elf";
 @Injectable()
 export class PlayerService {
 
-  constructor(private store: Store<{ team: Team }>, private teamService: TeamService, private teamRepository: TeamRepository) {
+  constructor(private teamRepository: TeamRepository) {
   }
 
   getPlayer(id: string): Observable<Player | undefined> {
