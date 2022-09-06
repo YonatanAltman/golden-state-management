@@ -17,9 +17,9 @@ export class SideBarComponent {
     {label: 'team', link: 'team'},
   ];
   stateManagement = {
-    link: 'https://ngneat.github.io/elf/',
-    logo: 'https://ngneat.github.io/elf/img/elf.png',
-    name: 'Elf'
+    link: 'https://angular.io/api/common/http/HttpClient',
+    logo: 'https://httpwg.org/assets/http.svg',
+    name: 'Http'
   };
   @Input() logo?: string;
 }

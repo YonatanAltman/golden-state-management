@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {Observable, switchMap, take, tap} from "rxjs";
+import {Observable, shareReplay, switchMap, take, tap} from "rxjs";
 import {Player} from "@golden-state-management/api-interfaces";
 import {ActivatedRoute} from "@angular/router";
 import {PlayerService} from "./player.service";
@@ -21,6 +21,7 @@ export class PlayerComponent {
   private getPlayer$(): Observable<Player | undefined> {
     return this.activatedRoute.paramMap.pipe(
       switchMap(params => this.service.getPlayer(params.get('id') || 'no id')),
+      shareReplay(1),
       tap(player => this.firstName = player?.firstName || 'Player not found🕵🏻‍♂️')
     )
 

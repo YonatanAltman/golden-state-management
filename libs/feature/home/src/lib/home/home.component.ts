@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {HomeService} from "./home.service";
-import {Observable} from "rxjs";
+import {Observable, shareReplay} from "rxjs";
 
 @Component({
   selector: 'golden-state-management-home',
@@ -9,6 +9,6 @@ import {Observable} from "rxjs";
   providers: [HomeService],
 })
 export class HomeComponent {
-  images$:Observable<string[]> = this.service.getImages();
+  images$:Observable<string[]> = this.service.getImages().pipe(shareReplay(1));
   constructor(private service: HomeService) {}
 }
