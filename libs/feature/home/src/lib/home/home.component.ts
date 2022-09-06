@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {HomeService} from "./home.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'golden-state-management-home',
@@ -8,6 +9,6 @@ import {HomeService} from "./home.service";
   providers: [HomeService],
 })
 export class HomeComponent {
-  images$ = this.service.getImages();
+  images$:Observable<string[]> = this.service.getImages();
   constructor(private service: HomeService) {}
 }

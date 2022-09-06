@@ -1,4 +1,6 @@
-<golden-state-management-page-wrapper [title]="'home works!'|titlecase">
+<golden-state-management-page-wrapper [title]="'home works!'|titlecase"
+                                      [isLoader]="true"
+                                      [resource]="(images$ |async)?.length">
   <div class="image" *ngFor="let image of images$|async">
     <img [src]="image" alt="home"/>
   </div>

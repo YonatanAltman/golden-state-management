@@ -1,4 +1,7 @@
-<golden-state-management-page-wrapper [title]="title" [isLoader]="true" [resource]="(players$ | async)?.length">
+<golden-state-management-page-wrapper
+  [title]="title"
+  [isLoader]="true"
+  [resource]="(players$ | async)?.length">
 <golden-state-management-table
   [config]="config"
   [data]="players$ | async"
