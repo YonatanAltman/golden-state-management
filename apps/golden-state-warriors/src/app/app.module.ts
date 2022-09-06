@@ -11,7 +11,6 @@ import {StoreModule} from '@ngrx/store';
 import {TeamEffects, teamReducer} from '@golden-state-management/store/ngrx';
 import {environment} from "../environments/environment";
 import {EffectsModule} from "@ngrx/effects";
-import {NG_ENTITY_SERVICE_CONFIG} from "@datorama/akita-ng-entity-service";
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,12 +28,6 @@ import {NG_ENTITY_SERVICE_CONFIG} from "@datorama/akita-ng-entity-service";
     {
       provide: ENV_CONFIG,
       useValue: {environment}
-    },
-    {
-      provide: NG_ENTITY_SERVICE_CONFIG,
-      useValue: {
-        baseUrl: environment.baseUrl
-      }
     }
   ],
   bootstrap: [AppComponent],
