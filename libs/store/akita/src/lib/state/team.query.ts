@@ -27,7 +27,7 @@ export class TeamQuery extends QueryEntity<TeamState> {
     ));
   }
 
-  getImage(): Observable<string[]> {
-    return this.selectEntity(GOLDEN_STATE_NAME).pipe(map(entity => entity?.homeImages || []));
+  getImage(name = GOLDEN_STATE_NAME): Observable<string[]> {
+    return this.selectEntity(name).pipe(map(entity => entity?.homeImages || []));
   }
 }
