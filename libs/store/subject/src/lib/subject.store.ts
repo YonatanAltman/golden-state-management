@@ -44,8 +44,5 @@ export class TeamSubjectStore implements ITeamStore {
     return this.state$().pipe(map(team => team.players));
   }
 
-  public resetState(){
-    this.update({} as Team);
-  }
 
 }
