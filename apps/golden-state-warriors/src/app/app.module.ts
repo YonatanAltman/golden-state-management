@@ -11,7 +11,6 @@ import {StoreModule} from '@ngrx/store';
 import {TeamEffects, teamReducer} from '@golden-state-management/store/ngrx';
 import {environment} from "../environments/environment";
 import {EffectsModule} from "@ngrx/effects";
-import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import {NG_ENTITY_SERVICE_CONFIG} from "@datorama/akita-ng-entity-service";
 
 @NgModule({
@@ -24,8 +23,7 @@ import {NG_ENTITY_SERVICE_CONFIG} from "@datorama/akita-ng-entity-service";
     SharedUiLayoutModule,
     FeatureHomeModule,
     StoreModule.forRoot({team: teamReducer}),
-    EffectsModule.forRoot([TeamEffects]),
-    environment.production ? [] : AkitaNgDevtools.forRoot()
+    EffectsModule.forRoot([TeamEffects])
   ],
   providers: [
     {
