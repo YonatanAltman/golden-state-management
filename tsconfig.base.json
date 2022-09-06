@@ -15,9 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@golden-state-management/store/akita": [
-        "libs/store/akita/src/index.ts"
-      ],
       "@golden-state-management/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
       ],
@@ -34,13 +31,15 @@
         "libs/feature/team/src/index.ts"
       ],
       "@golden-state-management/layout": ["libs/layout/src/index.ts"],
-      "@golden-state-management/store/ngrx": [
-        "libs/store/ngrx/src/index.ts"
-      ],
       "@golden-state-management/shared/ui-layout": [
         "libs/shared/ui-layout/src/index.ts"
       ],
+      "@golden-state-management/store/akita": ["libs/store/akita/src/index.ts"],
       "@golden-state-management/store/elf": ["libs/store/elf/src/index.ts"],
+      "@golden-state-management/store/ngrx": ["libs/store/ngrx/src/index.ts"],
+      "@golden-state-management/store/subject": [
+        "libs/store/subject/src/index.ts"
+      ],
       "@golden-state-management/util/style-color": [
         "libs/util/style-color/src/index.ts"
       ]

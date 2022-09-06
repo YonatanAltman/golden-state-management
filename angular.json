@@ -14,6 +14,7 @@
     "shared-ui-layout": "libs/shared/ui-layout",
     "store": "libs/store/ngrx",
     "store-elf": "libs/store/elf",
+    "store-subject": "libs/store/subject",
     "util-style-color": "libs/util/style-color"
   }
 }
