@@ -8,3 +8,4 @@ export interface Team {
   home?:string;
   homeImages: string[];
 }
+export const GOLDEN_STATE_NAME = 'Golden State';

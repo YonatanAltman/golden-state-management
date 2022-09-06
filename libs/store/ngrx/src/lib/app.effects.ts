@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {Actions, createEffect, ofType} from '@ngrx/effects';
 import {EMPTY, exhaustMap} from 'rxjs';
 import {catchError, map} from 'rxjs/operators';
-import {AppApiService} from "./app-api.service";
+import {AppApiService} from "@golden-state-management/shared/ui-layout";
 
 
 @Injectable()
@@ -13,7 +13,7 @@ export class TeamEffects {
       exhaustMap(() => this.apiService.getTeam()
         .pipe(
           map(team => {
-              console.log('load team', team);
+              console.log('TeamEffects load team', team);
               return {type: '[Team] Get success', payload: team};
             }
           ),

@@ -16,5 +16,10 @@ export class SideBarComponent {
     {label: 'home', link: 'home'},
     {label: 'team', link: 'team'},
   ];
-  @Input() logo?:string;
+  stateManagement = {
+    link: 'https://opensource.salesforce.com/akita/',
+    logo: 'https://opensource.salesforce.com/akita/img/akita.svg',
+    name: 'Akita'
+  };
+  @Input() logo?: string;
 }
