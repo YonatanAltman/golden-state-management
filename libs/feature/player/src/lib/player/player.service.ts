@@ -1,14 +1,12 @@
 import {Injectable} from '@angular/core';
 import {Observable} from "rxjs";
-import {Player, Team} from "@golden-state-management/api-interfaces";
-import {Store} from "@ngrx/store";
+import {Player} from "@golden-state-management/api-interfaces";
 import {TeamService} from "@golden-state-management/store/akita";
-import {TeamRepository} from "@golden-state-management/store/elf";
 
 @Injectable()
 export class PlayerService {
 
-  constructor(private store: Store<{ team: Team }>, private teamService: TeamService, private teamRepository: TeamRepository) {
+  constructor(private teamService: TeamService) {
   }
 
   getPlayer(id: string): Observable<Player | undefined> {
