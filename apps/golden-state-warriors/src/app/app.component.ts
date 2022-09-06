@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.store.dispatch({type: '[Team] Get'});
-    this.akitaTeamService.init();
+    this.store.dispatch({type: '[Team] Get'});
+    // this.akitaTeamService.init();
   }
 }

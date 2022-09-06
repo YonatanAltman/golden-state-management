@@ -11,7 +11,6 @@ export class HomeService {
   }
 
   getImages(): Observable<string[]> {
-    // return this.store.select(state => state.team.homeImages);
-    return this.teamService.getImage();
+    return this.store.select(state => state.team.homeImages);
   }
 }

@@ -1,6 +1,6 @@
 import {createReducer, on} from '@ngrx/store';
 import {getTeam, getTeamSuccess} from './app.actions'
-import {Team} from "@golden-state-management/api-interfaces";
+import {GOLDEN_STATE_NAME, Team} from "@golden-state-management/api-interfaces";
 
 export const initialState: Partial<Team> = {};
 export const teamReducer = createReducer(
@@ -14,7 +14,6 @@ export function onGetTeam(state: Partial<Team>) {
   return state;
 }
 
-export function onGetTeamSuccess(state: Partial<Team>, newState: Team) {
-  console.log('newState',newState);
-  return newState;
+export function onGetTeamSuccess(state: Partial<Team>, newState: Team[] | any[]) {
+  return newState.find(team => team.name === GOLDEN_STATE_NAME);
 }

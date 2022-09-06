@@ -11,7 +11,6 @@ export class PlayerService {
   }
 
   getPlayer(id: string): Observable<Player | undefined> {
-    // return this.store.select(state => state.team?.players?.find(p => '' + p.id === '' + id))
-    return this.teamService.getPlayer(id);
+    return this.store.select(state => state.team?.players?.find(p => '' + p.id === '' + id))
   }
 }

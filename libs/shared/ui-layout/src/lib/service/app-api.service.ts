@@ -14,7 +14,7 @@ export class AppApiService {
     this.baseUrl = this.config.environment.baseUrl;
   }
 
-  getTeam(): Observable<Team> {
-    return this.http.get<Team>(this.baseUrl + 'team').pipe(delay(2000));
+  getTeam(): Observable<Team[]> {
+    return this.http.get<Team[]>(this.baseUrl + '/team').pipe(delay(2000));
   }
 }
