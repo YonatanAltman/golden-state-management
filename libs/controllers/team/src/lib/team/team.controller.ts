@@ -3,13 +3,18 @@ import {mockDb} from "./team.mock";
 import * as fs from "fs";
 import {Team} from "@golden-state-management/api-interfaces";
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 @Controller('team')
 export class TeamController {
   db = mockDb();
 
   @Get()
-  getData() {
+  async getData() {
     const team: Partial<Team> = {
+      name: 'Golden State',
       coach: {
         id: 20202,
         firstName: 'Steve',
@@ -30,7 +35,8 @@ export class TeamController {
         player.jersey = player?.leagues?.standard?.jersey || '-';
         return player
       });
-      return team;
+      await sleep(2000);
+      return [team];
     } catch (error) {
       return {error}
     }

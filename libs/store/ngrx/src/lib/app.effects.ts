@@ -13,7 +13,7 @@ export class TeamEffects {
       exhaustMap(() => this.apiService.getTeam()
         .pipe(
           map(team => {
-              console.log('load team', team);
+              console.log('TeamEffects load team', team);
               return {type: '[Team] Get success', payload: team};
             }
           ),

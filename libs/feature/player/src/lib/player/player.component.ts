@@ -1,9 +1,8 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {Observable, switchMap, tap} from "rxjs";
-import {Player, Team} from "@golden-state-management/api-interfaces";
+import {Observable, switchMap, take, tap} from "rxjs";
+import {Player} from "@golden-state-management/api-interfaces";
 import {ActivatedRoute} from "@angular/router";
 import {PlayerService} from "./player.service";
-import {Store} from "@ngrx/store";
 
 @Component({
   selector: 'golden-state-management-player',
@@ -21,7 +20,8 @@ export class PlayerComponent {
 
   private getPlayer$(): Observable<Player | undefined> {
     return this.activatedRoute.paramMap.pipe(
-      switchMap(params => this.service.getPlayer(params.get('id'))),
+      take(1),
+      switchMap(params => this.service.getPlayer(params.get('id') || 'no id')),
       tap(player => this.firstName = player?.firstName || 'Player not found🕵🏻‍♂️')
     )
 

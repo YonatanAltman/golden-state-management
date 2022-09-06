@@ -35,7 +35,7 @@ import {NG_ENTITY_SERVICE_CONFIG} from "@datorama/akita-ng-entity-service";
     {
       provide: NG_ENTITY_SERVICE_CONFIG,
       useValue: {
-        baseUrl: 'https://jsonplaceholder.typicode.com'
+        baseUrl: environment.baseUrl
       }
     }
   ],
