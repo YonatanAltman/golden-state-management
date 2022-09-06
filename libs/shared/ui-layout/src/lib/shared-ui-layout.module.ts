@@ -5,9 +5,10 @@ import { SideBarComponent } from './layout/side-bar/side-bar.component';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
+import {LoaderModule} from "./loader/loader.module";
 
 @NgModule({
-  imports: [CommonModule, MatButtonModule, RouterModule],
+  imports: [CommonModule, MatButtonModule, RouterModule, LoaderModule],
   declarations: [LayoutComponent, SideBarComponent, PageWrapperComponent],
   exports: [LayoutComponent, SideBarComponent,PageWrapperComponent],
 })
