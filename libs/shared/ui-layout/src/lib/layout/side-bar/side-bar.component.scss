@@ -29,9 +29,16 @@
       text-transform: capitalize;
       font-size: large;
       transition: ease-in-out .2s;
-      &.active{
+
+      &.active {
         border-right: solid $primary-blue 4px;
       }
+    }
+
+    .state-management-logo {
+      margin: 20px auto;
+      color: $primary-blue;
+
     }
   }
 }

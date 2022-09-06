@@ -20,7 +20,6 @@ export class PlayerComponent {
 
   private getPlayer$(): Observable<Player | undefined> {
     return this.activatedRoute.paramMap.pipe(
-      take(1),
       switchMap(params => this.service.getPlayer(params.get('id') || 'no id')),
       tap(player => this.firstName = player?.firstName || 'Player not found🕵🏻‍♂️')
     )
