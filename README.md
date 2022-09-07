@@ -6,7 +6,7 @@ In order to run this app:
 - angular: `npm run start`
 - nestjs server: `npm run start:api`
 
-###List of branchs:
+## List of branchs:
 
 - yonatan/http-calls
 - yonatan/subject
