@@ -2,13 +2,17 @@
 
 # GoldenStateManagement
 
+In order to run this app:
+- angular: `npm run start`
+- nestjs server: `npm run start:api`
+
 ###List of branchs:
 
+- yonatan/http-calls
+- yonatan/subject
+- yonatan/ngrx
 - yonatan/akita
 - yonatan/elf
-- yonatan/http-calls
-- yonatan/ngrx
-- yonatan/subject
 
 
 ## State Management
