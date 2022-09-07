@@ -2,7 +2,17 @@
 
 # GoldenStateManagement
 
+###List of branchs:
+
+- yonatan/akita
+- yonatan/elf
+- yonatan/http-calls
+- yonatan/ngrx
+- yonatan/subject
+
+
 ## State Management
+
 
 ### ngrx
 - [ ] Hard to understand
