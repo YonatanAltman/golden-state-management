@@ -3,6 +3,7 @@ import {createStore, select, withProps} from '@ngneat/elf';
 import {Team, ITeamStore, Player} from "@golden-state-management/api-interfaces";
 import {AppApiService} from "@golden-state-management/shared/ui-layout";
 import {Observable, of} from "rxjs";
+import {HttpClient} from "@angular/common/http";
 
 export interface TeamProps {
   team: Team | null;

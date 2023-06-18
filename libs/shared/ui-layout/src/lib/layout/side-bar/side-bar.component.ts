@@ -17,9 +17,9 @@ export class SideBarComponent {
     {label: 'team', link: 'team'},
   ];
   stateManagement = {
-    link: 'https://ngneat.github.io/elf/',
-    logo: 'https://ngneat.github.io/elf/img/elf.png',
-    name: 'Elf'
+    link: 'https://opensource.e-square.io/ark',
+    logo: '/assets/logo/ark.svg',
+    name: 'ark'
   };
   @Input() logo?: string;
 }
